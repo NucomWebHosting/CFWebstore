@@ -8,4 +8,4 @@ CFWebstore is an open-source shopping cart and store-management system built on 
 
 ## Updates
 
-Updates are sporadic but meaningfull. 
+Updates ship whenever we have something worth releasing.
