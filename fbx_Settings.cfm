@@ -17,7 +17,6 @@
 
 <!--- This should generally not be changed, used for internal custom tags calls --->
 <cfparam name="thisSelf" default="index.cfm">
-<cfparam name="Request.thisSelf" default="#thisSelf#">
 		
 <!--- Set full path to self, needed to run as a plugin (mura, etc.) --->
 <cfset Request.SecureSelf = Request.SecureURL & thisSelf>
@@ -32,7 +31,8 @@
 </cfif>
 		
 <!--- should fusebox silently suppress its own error messages? default is FALSE --->
-<cfset fusebox.suppresserrors = FALSE>
+<cfset fusebox.suppresserrors = TRUE>
+<cfset fusebox.suppresserrors = False><!--- this was new code --->
 
 <!--- Execute only when this is the application's home circuit --->
 <cfif fusebox.IsHomeCircuit>

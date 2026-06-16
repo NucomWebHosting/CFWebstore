@@ -24,6 +24,12 @@
 <!--- This is a prefix appended to the front of the table names in your database. Useful if you need to run multiple stores from one database. Leave blank for normal installations. --->
 <cfparam name="Request.DB_Prefix" default="">
 
+<!--- lets add a new variable --->
+<cfparam name="Request.NewVariable" default="">
+
+<!--- yet another new variable --->
+<cfparam name="Request.AnotherNewVariable" default="">
+
 <!--- Be sure to set this to "No" for production sites. You can set to YES for development to prevent caching, skip CSRF checks, etc. --->
 <cfset Request.DevelopmentMode = "no">
 
