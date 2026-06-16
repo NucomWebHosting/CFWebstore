@@ -103,8 +103,8 @@
 		</cfif>	
 		
 		<cfif cookieson>
-			<cfset Request.Token1 = "Big Fat Tokens Are Not Needed When Cookies Are On">
-			<cfset Request.Token2 = "Tiny little tockens">	
+			<cfset Request.Token1 = "">
+			<cfset Request.Token2 = "">	
 		<cfelse>
 			<cfif not isdefined("session.rollCount")>
 				<cfset session.rollcount = 1>
